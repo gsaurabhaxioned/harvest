@@ -616,9 +616,20 @@ footer {
   row-gap: 10px;
 }
 
-footer ul li a {
-  color: #fff;
+footer ul li a,.address {
+  color: rgb(255,255,255,0.8);
   font-size: 12px;
+}
+
+.information {
+  margin-left: 7.7%;
+}
+
+.copyright {
+  margin-top: 39px;
+  color: rgb(255,255,255,0.8);
+  font-size: 12px;
+  text-align: center;
 }
 
  /*=================================
