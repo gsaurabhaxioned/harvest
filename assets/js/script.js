@@ -14,6 +14,7 @@ category.addEventListener("change",()=>{
         i.classList.remove("category-content");
         if(i.innerHTML.toLowerCase().indexOf(category_name) > -1) {
             i.classList.remove("hidecontent");
+            i.classList.add("category-content");
         }
     })
 })
