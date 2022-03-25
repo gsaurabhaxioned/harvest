@@ -284,10 +284,11 @@ header .wrapper {
 .captcha {
   width: 70px;
   height: 61px;
-  border: 1px solid rgb(0,0,0,0.3);
   position: absolute;
   top: 32%;
   right: 0;
+  box-shadow: 0 0 4px rgb(0,0,0,0.6);
+  box-sizing: border-box;
 }
 
 /* join-us section end  */
@@ -308,7 +309,7 @@ header .wrapper {
 }
 
 .benefits-and-perks-links {
-  margin-top: 37px;
+  margin-top: 40px;
   display: flex;
 }
 
@@ -434,7 +435,7 @@ header .wrapper {
 /* harvest start  */
 
 .harvest-values {
-  padding: 131px 0 110px;
+  padding: 126px 0 110px;
 }
 
 .harvest-values .wrapper {
@@ -450,13 +451,13 @@ header .wrapper {
 }
 
 .harvest-values-cards {
-  margin-top: 49px;
+  margin-top: 53px;
   display: flex;
   justify-content: space-between;
 }
 
 .value-card {
-  flex-basis: 20.7%;
+  flex-basis: 20.8%;
   height: 176px;
   padding-top: 77px;
   border: 1px solid #E06C63;
@@ -499,12 +500,13 @@ header .wrapper {
 }
 
 .all-job-category {
-  width: 12.1%;
+  width: 13.8%;
   padding: 12px 7px;
-  margin-top: 53px;
+  margin-top: 57px;
   margin-left: 10%;
-  border: 1px solid rgb(0,0,0,0.2);
+  border: 1px solid rgb(0,0,0,0.1);
   display: inline-block;
+  color: rgb(0,0,0,0.5);
   font-size: 10px;
   box-shadow: 1px 1px rgb(0 0 0 / 20%);
   white-space: nowrap;
@@ -521,20 +523,23 @@ header .wrapper {
 }
 
 .job-category-container {
+  width: 80%;
   margin-top: 25px;
   margin-left: 10%;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 5px rgb(0,0,0,0.2);
 }
 
 .category-content {
-  padding: 15px;
+  padding: 13px 15px;
   border: 1px solid rgb(0,0,0,0.2);
   display: flex;
   justify-content: space-between;
 }
 
 .category-title {
+  margin-top: 7px;
   color: #BB9984;
   font-size: 13px;
   font-weight: bold;
@@ -550,6 +555,8 @@ header .wrapper {
 }
 
 .job-type,.job-duration {
+  margin-right: 12px;
+  color: rgb(0,0,0,0.7);
   font-size: 11px;
 }
 
@@ -565,7 +572,7 @@ header .wrapper {
 
 .more-details {
   color: #BB9984;
-  font-size: 11px;
+  font-size: 12px;
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -626,7 +633,7 @@ footer {
 
 footer ul li a,.address {
   color: rgb(255,255,255,0.8);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 footer ul li a {
@@ -772,6 +779,7 @@ header .wrapper {
 }
 
 .category-content {
+  padding: 22px 15px 9px;
   flex-direction: column;
   row-gap: 20px;
 }
