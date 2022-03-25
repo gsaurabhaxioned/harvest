@@ -433,7 +433,7 @@ header .wrapper {
 /* harvest start  */
 
 .harvest-values {
-  padding: 131px 0;
+  padding: 131px 0 110px;
 }
 
 .harvest-values .wrapper {
@@ -481,6 +481,112 @@ header .wrapper {
 
 /* harvest end  */
 
+/* all current opportunities section start  */
+
+.all-current-opportunities .wrapper {
+  width: 60%;
+}
+
+.all-current-opportunities h3 {
+  color: rgb(0,0,0,0.7);
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.all-job-category {
+  width: 12.1%;
+  padding: 12px 7px;
+  margin-top: 53px;
+  margin-left: 10%;
+  border: 1px solid rgb(0,0,0,0.2);
+  display: inline-block;
+  font-size: 10px;
+  box-shadow: 1px 1px rgb(0 0 0 / 20%);
+  white-space: nowrap;
+}
+
+.all-job-category::after {
+  content: "\f0d7";
+  margin-left: 29%;
+  font-family: "fontAwesome";
+}
+
+.job-category-container {
+  margin-top: 25px;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-content {
+  padding: 15px;
+  border: 1px solid rgb(0,0,0,0.2);
+  display: flex;
+  justify-content: space-between;
+}
+
+.categoty-title {
+  color: #BB9984;
+  font-size: 13px;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+.categoty-title:hover {
+  color: #0000ff;
+}
+
+.job-type,.job-duration {
+  font-size: 11px;
+}
+
+.job-type::before,.job-duration::before {
+  content: "\f1ad";
+  margin-right: 3px;
+  font-family: "fontAwesome";
+}
+
+.job-duration::before {
+  content: "\f252";
+}
+
+.more-details {
+  color: #BB9984;
+  font-size: 11px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+.more-details:hover {
+  color: #0000ff;
+}
+
+.more-details::after {
+  content: "\f178";
+  margin-left: 3px;
+  font-family: "fontAwesome";
+  font-size: 8px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+.more-details:hover::after {
+  color: #0000ff;
+}
+
+/* all current opportunities end  */
+
 /*=================================
   main styling ends here
 =================================*/
@@ -524,6 +630,11 @@ header .wrapper,.what-is-harvester-contents,.benefits-and-perks-links {
 
 .benefits-and-perks-links ul:nth-child(2),.benefits-and-perks-links ul:nth-child(3) {
   margin-left: 0;
+}
+
+.category-content {
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 }  
