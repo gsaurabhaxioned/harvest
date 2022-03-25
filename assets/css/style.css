@@ -595,11 +595,11 @@ header .wrapper {
   footer styling starts here
 =================================*/ 
 
-
-
-
-
-
+footer {
+  padding: 70px 0;
+  background-color: #3A3A3A;
+  color: #fff;
+}
 
  /*=================================
   footer styling ends here
