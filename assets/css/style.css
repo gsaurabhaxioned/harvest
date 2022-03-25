@@ -108,10 +108,15 @@ li {
   Header styling starts here
 =================================*/
 
+header {
+  padding: 17px 0;
+}
+
 header .wrapper {
   width: 96.8%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .ham,.cross {
@@ -130,12 +135,74 @@ header .wrapper {
   content: "\f00d";
 }
 
-.menus ul li a {
-  font-size: 10px;
-  letter-spacing: 1px;
+.menus {
+  margin-right: 0.3%;
+  flex-basis: 37.9%;
 }
 
+.menus ul {
+  display: flex;
+  justify-content: space-between;
+}
 
+.menus ul li a {
+  color: rgb(0,0,0,0.8);
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+.menus ul li a:hover {
+  color: #0000ff;;
+}
+
+.header-icons {
+  margin-right: 0.2%;
+  display: flex;
+  flex-basis: 4.7%;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.header-icons li a {
+  text-indent: -9999px;
+}
+
+.header-icons li a::before {
+  content: "\f230";
+  color: #ffa500;
+  float: right;
+  font-family: "fontAwesome";
+  font-size: 13px;
+  text-indent: 0;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+.header-icons li a:hover:before {
+  color: #0000ff;
+} 
+
+.header-icons li:nth-child(2) a::before {
+  content: "\f099";
+}
+
+.header-icons li:nth-child(3) a::before {
+  content: "\f0e1";
+}
+
+.header-icons li:nth-child(4) a::before {
+  content: "\f16d";
+}
 
 /*=================================
   Header styling ends here
@@ -145,12 +212,274 @@ header .wrapper {
   main styling starts here
 =================================*/
 
+/* join-us section start  */
+
+.join-us {
+  padding: 36px 0;
+  position: relative;
+}
+
+.join-us h2 {
+  color: #E4663C;
+  font-size: 31px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.join-us p {
+  margin-top: 32px;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.6;
+}
+
+.opportunities {
+  width: 20.5%;
+  padding: 13px 21px;
+  margin: 31px auto;
+  display: block;
+  background: #ECECEC;
+  color: rgb(0,0,0,0.6);
+  font-size: 11px;
+  font-weight: bold;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+.opportunities:hover {
+  color: #0000ff;
+} 
+
+.join-us h3 {
+  margin-top: 97px;
+  color: rgb(0,0,0,0.7);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.what-is-harvester-contents {
+  margin-top: 55px;
+  display: flex;
+}
+
+.what-is-harvester-contents p {
+  margin: 0;
+  flex-basis: 47%;
+}
+
+.what-is-harvester-contents figure {
+  width: 508px;
+  margin-left: 4.4%;
+  flex-basis: 47.3%;
+}
+
+.captcha {
+  width: 70px;
+  height: 61px;
+  border: 1px solid rgb(0,0,0,0.3);
+  position: absolute;
+  top: 32%;
+  right: 0;
+}
+
+/* join-us section end  */
+
+/* benefits and perks start  */
+
+.benefits-and-perks {
+  padding: 72px 0;
+  background: #F0F0F0;
+}
+
+.benefits-and-perks h3 {
+  color: rgb(0,0,0,0.7);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.benefits-and-perks-links {
+  margin-top: 37px;
+  display: flex;
+}
+
+.benefits-and-perks-links ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+  flex-basis: 30%;
+}
+
+.benefits-and-perks-links ul:nth-child(2) {
+  margin-left: 4.2%;
+}
+
+.benefits-and-perks-links ul:nth-child(3) {
+  margin-left: 4.4%;
+}
+
+.benefits-and-perks-links ul li {
+  display: flex;
+  align-items: center;
+}
+
+.benefits-and-perks-links ul li a {
+  color: rgb(0,0,0,0.8);
+  font-size: 15px;
+  letter-spacing: 1px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+.benefits-and-perks-links ul li a:hover {
+  color: #0000ff;
+}
+
+.benefits-and-perks-links ul li::before {
+  content: "\f06e";
+  width: 51px;
+  height: 51px;
+  padding-top: 4%;
+  margin-right: 5.8%;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: #FA5D43;
+  color: #fff;
+  font-family: "fontAwesome";
+  font-size: 32px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+.benefits-and-perks-links ul:nth-child(1) li:nth-child(2):before {
+  content: "\f0e7";
+}
+
+.benefits-and-perks-links ul:nth-child(1) li:nth-child(3):before {
+  content: "\f187";
+}
+
+.benefits-and-perks-links ul:nth-child(1) li:nth-child(4):before {
+  content: "\f179";
+}
+
+.benefits-and-perks-links ul:nth-child(1) li:nth-child(5):before {
+  content: "\f072";
+}
 
 
+.benefits-and-perks-links ul:nth-child(2) li:nth-child(1):before {
+  content: "\f0f2";
+}
 
 
+.benefits-and-perks-links ul:nth-child(2) li:nth-child(2):before {
+  content: "\f005";
+}
+
+.benefits-and-perks-links ul:nth-child(2) li:nth-child(3):before {
+  content: "\f1ae";
+}
+
+.benefits-and-perks-links ul:nth-child(2) li:nth-child(4):before {
+  content: "\f0f1";
+}
+
+.benefits-and-perks-links ul:nth-child(2) li:nth-child(5):before {
+  content: "\f0d6 ";
+}
+
+.benefits-and-perks-links ul:nth-child(3) li:nth-child(1):before {
+  content: "\f238";
+}
 
 
+.benefits-and-perks-links ul:nth-child(3) li:nth-child(2):before {
+  content: "\f1fe";
+}
+
+.benefits-and-perks-links ul:nth-child(3) li:nth-child(3):before {
+  content: "\f206";
+}
+
+.benefits-and-perks-links ul:nth-child(3) li:nth-child(4):before {
+  content: "\f1cd";
+}
+
+.benefits-and-perks-links ul:nth-child(3) li:nth-child(5):before {
+  content: "\f06b";
+}
+
+.benefits-and-perks-links ul li:hover:before {
+  background-color: #000;
+}
+/* benefits and perks end  */
+/* harvest start  */
+
+.harvest-values {
+  padding: 131px 0;
+}
+
+.harvest-values .wrapper {
+  width: 56.8%;
+}
+
+.harvest-values h3 {
+  color: rgb(0,0,0,0.7);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.harvest-values-cards {
+  margin-top: 49px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.value-card {
+  flex-basis: 20.7%;
+  height: 176px;
+  padding-top: 77px;
+  border: 1px solid #E06C63;
+  background: #E3E6ED;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.value-card a {
+  color: #E06C63;
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+.value-card a:hover {
+  color: #0000ff;
+}
+
+/* harvest end  */
 
 /*=================================
   main styling ends here
@@ -174,6 +503,27 @@ header .wrapper {
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
+header .wrapper,.what-is-harvester-contents,.benefits-and-perks-links {
+  flex-direction: column;
+  row-gap: 20px;
+}
 
+.harvest-values-cards {
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.value-card {
+  flex-basis: 40%;
+}
+
+.what-is-harvester-contents figure {
+  width: auto;
+  margin-left: 0;
+}
+
+.benefits-and-perks-links ul:nth-child(2),.benefits-and-perks-links ul:nth-child(3) {
+  margin-left: 0;
+}
 
 }  
